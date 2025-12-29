@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  direction: rtl;
+}
+
+.font-iransans {
+  font-family: var(--font-iransans), sans-serif;
+}
+
+[dir="rtl"] .MuiFormLabel-root {
+  left: auto;
+  right: auto;
+  transform-origin: top right;
+  text-align: right;
+  margin-right: 25px;
+}
+
+[dir="rtl"] .MuiOutlinedInput-notchedOutline {
+  text-align: right;
+}
+[dir="rtl"] .MuiFormHelperText-root {
+  text-align: right;
+  margin-right: 0;
+}
+
+.rbc-time-header.rbc-overflowing {
+  margin-right: 0 !important;
+  margin-left: 14px !important;
+}
+
+
+@media (max-width: 768px) {
+  .swiper {
+    padding-bottom: 25px !important;
+  }
+  .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: -5px !important;
+  }
+  .swiper-pagination-bullet{
+    width: 5px;
+    height: 5px;
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: #d88730 !important;
+  }
+}
+
